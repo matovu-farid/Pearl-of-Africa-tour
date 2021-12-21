@@ -1,3 +1,167 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+}
 
+html {
+  font-size: 10px;
+  color: #525252;
+}
+
+body {
+  font-size: 1.2rem;
+  margin: auto 0;
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+section {
+  padding-top: 40px;
+}
+
+.hero {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.hero .text {
+  padding: 15px;
+  border: solid #fff;
+}
+.hero header {
+  color: #ec5242;
+  font-size: 2.2rem;
+  padding: 30px 0;
+}
+.hero header span {
+  font-size: 2.2rem;
+}
+.hero footer {
+  padding: 20px 0;
+}
+.hero footer .date {
+  font-size: 2.2rem;
+}
+
+.fa,
+.fas,
+.fab {
+  font-size: 2.2rem;
+}
+
+.categories {
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  align-items: center;
+}
+.categories header {
+  text-align: center;
+  padding: 20px;
+}
+.categories .button {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.categories li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 9vh;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 4px 0;
+}
+.categories li div {
+  flex: 1;
+  display: flex;
+  padding: 5px;
+}
+.categories li div h3 {
+  padding-left: 10px;
+}
+.categories li div h3 {
+  color: #ec5242;
+  margin: 0 0 0 5px;
+}
+.categories li p {
+  flex: 2;
+}
+
+.parks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.parks header {
+  padding: 10px;
+}
+.parks hr {
+  width: 10%;
+  height: 2px;
+  background-color: #ec5242;
+  border: 0;
+  border-radius: 1px;
+}
+.parks img {
+  width: 30%;
+  margin: 10px;
+}
+.parks li {
+  display: flex;
+  margin: 20px 0;
+  height: 15vh;
+}
+.parks li hr {
+  background-color: #d3d3d3;
+  margin: 5px 0;
+}
+.parks li .title {
+  padding: 3px;
+}
+.parks li .subtitle {
+  padding: 2px;
+  color: #ec5242;
+  font-style: italic;
+}
+.parks li .descripton {
+  padding: 2px;
+}
+
+.more {
+  background-color: transparent;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: solid #d3d3d3 2px;
+}
+.more .button-text {
+  padding: 10px;
+}
+.more .fa {
+  color: #ec5242;
+  align-self: center;
+}
+
+.button {
+  color: #fff;
+  background-color: #ec5242;
+  padding: 20px 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
