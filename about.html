@@ -12,56 +12,78 @@
     <script src="https://kit.fontawesome.com/bac16a29bd.js" crossorigin="anonymous"></script>
     <title>The Pearl of Africa Tour 2021</title>
 </head>
-<body>
+<body class="about">
+    <section class="menu no-display">
+        <i class="fa fa-times close" aria-hidden="true"></i>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Home
+                </a>
+                </li>
+            <li><a href="#about-logo">About logo</a></li>
+            <li><a href="#patners">Patners</a></li>
+            
+            
+            
+        </ul>
+    </section>
     <main>
         <section class="hero">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-bars menu-button" aria-hidden="true"></i>
             <header>
-                <h1>Welcome to the Pearl of Africa<span>
+                <h1><span >"Welcome to the Pearl of Africa"</span>
+                    <br/>
                     The Pearl of Africa Tour 2021
-                </span></h1>
+                </h1>
             </header>
-            <p>
+            <p class="about-description">
                 The Pearl of Africa Tour is an annual tourism event in the East African region organized by the Uganda Tourism Board (UTB).
                 The tour gives tourists the opportunity to marvel at all the indigenous wildlife and see rare species not seen anywhere in the world at no cost.
             </p>
             <footer>
                 <p>For more information about the Pearl of Africa Tour, please visit the website
-                    <a href="https://utb.go.ug">Go to website</a>
-                    /p>
-                <p>Uganda Tourism Board - Visituganda</p>
+                    Uganda Tourism Board - Visituganda
+                </p>
+                <a href="https://utb.go.ug">Go to website</a>
             </footer>
 
         </section>
-        <section>
+        <section class="about-logo" id="about-logo">
             <header>
                 <h2>
                     The Pearl of Africa Tour 2021 LOGO 
                 </h2>
                 
             </header>
+            <hr class="underline">
             <P>
                 The logo of the Pearl of Africa Tour was decided through the logo competition.
             </P>
             <img class="logo" src="./assets/logos/PearlOAT.png" alt="The Pearl of Africa Tour logo">
         </section>
-        <section>
+        <section class="past-years">
             <header>
                 <h2>
-
                     See the past Pearl of Africa tours
                 </h2>
             </header>
             <p>Take a look at the last two tours that took place</p>
             <ul>
-                <li>
-                    <h3>2020</h3>
-                    <p>The best Pearl of Africa tour</p>
+                <li class="last">
+                    <div class="overlay">
+
+                        <h3>2020</h3>
+                        <p>The best Pearl of Africa tour</p>
+                    </div>
 
                 </li>
-                <li>
-                    <h3>2019</h3>
-                    <p>The very first Pearl of Africa tour</p>
+                <li class="first">
+                    <div class="overlay">
+
+                        <h3>2019</h3>
+                        <p>The very first Pearl of Africa tour</p>
+                    </div>
 
                 </li>
             </ul>
@@ -69,14 +91,42 @@
         
     </main>
     <footer>
-        <section class="patners">
+        <section class="patners" id="#patners">
+            <header>
+                <h2>Patners</h2>
+            </header>
+            <hr class="underline">
+            
+                <ul>
+                    <li>
+                        
+                        Ireland
+                    </li>
+                    <li>
+                        
+                        Morrocco Tour
+                    </li>
+                    <li>
+                        
+                       Kenya
+                    </li>
+                    <li>
+                        
+                        Dubai Travel
+                    </li>
+                    <li>
+                        Africana Hotel
+                    </li>
+                </ul>
+            
 
         </section>
-        <section class="copyright">
+        <section class="copyright" id="copyright">
             <p>© A Uganda Tourism Board Copyright.</p>
             <p>All Rights Reserved.</p>
         </section>
     </footer>
+    <script src="./mobile_menu.js"></script>
     
 </body>
 </html>

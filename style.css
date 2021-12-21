@@ -14,6 +14,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  color: inherit;
+  font-weight: 700;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -25,6 +30,22 @@ button {
 
 section {
   padding-top: 40px;
+}
+
+h1 {
+  padding: 10px 0;
+}
+
+h2 {
+  padding: 5px 0;
+}
+
+h3, h4 {
+  padding: 3px 0;
+}
+
+p {
+  padding: 2px 0;
 }
 
 .hero {
@@ -39,7 +60,7 @@ section {
 }
 .hero header {
   color: #ec5242;
-  font-size: 2.2rem;
+  font-size: 3rem;
   padding: 30px 0;
 }
 .hero header span {
@@ -60,11 +81,12 @@ section {
 
 .categories {
   background: #272a31;
+  width: 100%;
   color: #fff;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80vh;
   align-items: center;
 }
 .categories header {
@@ -80,7 +102,6 @@ section {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  height: 9vh;
   background: rgba(255, 255, 255, 0.15);
   margin: 4px 0;
 }
@@ -100,6 +121,26 @@ section {
   flex: 2;
 }
 
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+.about-logo p {
+  padding: 10px 0;
+}
+
+.underline {
+  width: 10%;
+  height: 2px;
+  background-color: #ec5242;
+  border: 0;
+  border-radius: 1px;
+  align-self: center;
+}
+
 .parks {
   display: flex;
   flex-direction: column;
@@ -109,25 +150,21 @@ section {
 .parks header {
   padding: 10px;
 }
-.parks hr {
-  width: 10%;
-  height: 2px;
-  background-color: #ec5242;
-  border: 0;
-  border-radius: 1px;
-}
 .parks img {
-  width: 30%;
+  width: 100px;
+  height: 100px;
   margin: 10px;
 }
 .parks li {
   display: flex;
   margin: 20px 0;
   height: 15vh;
+  width: 350px;
 }
 .parks li hr {
   background-color: #d3d3d3;
   margin: 5px 0;
+  width: 10%;
 }
 .parks li .title {
   padding: 3px;
@@ -138,7 +175,7 @@ section {
   font-style: italic;
 }
 .parks li .descripton {
-  padding: 2px;
+  padding: 1px;
 }
 
 .more {
@@ -162,6 +199,208 @@ section {
   color: #fff;
   background-color: #ec5242;
   padding: 20px 30px;
+}
+
+.logo {
+  height: 15vh;
+  border: #d3d3d3 solid;
+}
+
+.header-logo {
+  height: 5vh;
+}
+
+.about main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about .menu-button {
+  text-align: start;
+}
+
+.about-description {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.past-years {
+  width: 90%;
+}
+.past-years .first {
+  height: 20vh;
+  background: url("./assets/images/elephant_tour.jpeg") no-repeat;
+  background-size: cover;
+}
+.past-years .last {
+  height: 20vh;
+  background: url("./assets/images/lions.jpeg") no-repeat;
+  background-size: cover;
+}
+.past-years .overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
+}
+.past-years .overlay h3 {
+  font-size: 2.2rem;
+}
+
+.patners {
+  background-color: #272a31;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10vh;
+}
+.patners header {
+  color: white;
+}
+.patners img {
+  width: 50px;
+}
+.patners ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #525252;
+}
+.patners ul li {
+  padding: 10px;
+}
+
+.menu {
+  position: absolute;
+  background-color: #272a31;
+  width: 100%;
+  color: #fff;
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu li {
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  text-align: center;
+  margin: 3px 0;
+}
+.menu a {
+  text-decoration: none;
+  padding: auto;
+}
+.menu .fa {
+  align-self: flex-end;
+  margin: 20px;
+}
+
+.no-display {
+  display: none;
+}
+
+.only-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more-categories {
+    padding: 20px;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .categories ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .categories ul li {
+    margin: 0 1px;
+    flex-direction: column;
+  }
+  .categories ul li div {
+    flex-direction: column;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .welcome {
+    font-size: 4.8rem;
+  }
+  .welcome span {
+    font-size: 3rem;
+  }
+
+  .hero > * {
+    width: 80%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav a {
+    text-decoration: none;
+  }
+  .nav div {
+    display: flex;
+    justify-content: center;
+    flex: 4;
+  }
+  .nav ul {
+    flex: 6;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .parks ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
