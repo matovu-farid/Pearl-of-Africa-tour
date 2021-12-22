@@ -1,3 +1,7 @@
+@font-face {
+  font-family: cocco;
+  src: url(./assets/fonts/coco.ttf);
+}
 * {
   box-sizing: content-box;
   margin: 0;
@@ -38,6 +42,7 @@ section {
 
 h1 {
   padding: 10px 0;
+  font-family: "cocco";
 }
 
 h2 {
@@ -57,15 +62,28 @@ p {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background-size: cover;
 }
 .hero .text {
   padding: 15px;
   border: solid #fff;
 }
+.hero .background-images {
+  flex: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: url("./assets/backgrounds/african_woman.png") no-repeat 15% 15%, url("./assets/backgrounds/african_pattern.png") no-repeat 75% 35%, url("./assets/backgrounds/mask.png") no-repeat 5% 45%;
+  background-size: 100px 100px;
+  filter: grayscale(100%) opacity(15%);
+}
 .hero header {
   color: #ec5242;
   font-size: 3rem;
   padding: 30px 0;
+  font-weight: 900;
 }
 .hero header span {
   font-size: 2.2rem;
@@ -75,6 +93,8 @@ p {
 }
 .hero footer .date {
   font-size: 2.2rem;
+  font-family: cocco;
+  font-weight: 900;
 }
 
 .fa,
@@ -155,8 +175,8 @@ p {
   padding: 10px;
 }
 .parks img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 10px;
 }
 .parks li {
@@ -169,6 +189,11 @@ p {
   background-color: #d3d3d3;
   margin: 5px 0;
   width: 10%;
+}
+.parks li .image {
+  background: url("./assets/backgrounds/black_checked.jpeg") no-repeat;
+  background-size: 50px 50px;
+  background-position: 0% 0%;
 }
 .parks li .title {
   padding: 3px;
@@ -285,6 +310,7 @@ p {
 
 .menu {
   position: absolute;
+  z-index: 1;
   background-color: #272a31;
   width: 100%;
   color: #fff;
@@ -308,6 +334,7 @@ p {
 .menu a {
   text-decoration: none;
   padding: auto;
+  width: 100%;
 }
 .menu .fa {
   align-self: flex-end;
@@ -389,6 +416,11 @@ p {
     font-size: 3rem;
   }
 
+  .hero .background-images {
+    background: url("./assets/backgrounds/lion_a-removebg-preview.png") no-repeat 5% 5%, url("./assets/backgrounds/elephant-removebg-preview.png") no-repeat 90% 25%, url("./assets/backgrounds/mask.png") no-repeat 5% 35%;
+    background-size: 200px, 150px, 100px;
+  }
+
   .hero > * {
     width: 80%;
   }
@@ -418,6 +450,11 @@ p {
   .parks ul {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  .parks li .image {
+    background: url("./assets/backgrounds/grey_checked.jpeg") no-repeat;
+    background-size: 50px 50px;
+    background-position: 0% 0%;
   }
 
   .about .text {

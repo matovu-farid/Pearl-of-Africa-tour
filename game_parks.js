@@ -35,39 +35,18 @@ const gameParks = [
         summary:'Climb a volcano',
         description: `Climbing Mount Elgon is the main activity in the park but there are several animal species that can be spotted at the foot of the mountain and surrounding areas` 
     },
-    // {
-    //     name: "Murchison falls National Park",
-    //     image: "https://www.silverbackgorillatours.com/wp-content/uploads/2019/03/national-park-in-uganda.jpg",
-    //     summary:'The largest park in Uganda',
-    //     description: `Murchison Falls National Park is one of the best places to go on a wildlife safari in Africa.The key attraction is the beautiful Murchison Falls on the great river Nile.  ` 
-    // },
-    // {
-    //     name: "Queen Elizabeth National Park",
-    //     image: "https://www.silverbackgorillatours.com/wp-content/uploads/2019/03/national-park-of-uganda.jpg",
-    //     summary:'The most popular park in Uganda',
-    //     description: `Famous for hosting the rare tree climbing lions but visitors can also spot chimpanzees at the Maramagambo and the amazing Kyambura Gorge.` 
-    // },
-    // {
-    //     name: "Semuliki National Park",
-    //     image: "https://www.silverbackgorillatours.com/wp-content/uploads/2019/03/national-parks-uganda.jpg",
-    //     summary:'The most popular park in Uganda',
-    //     description: `one of the best places bird watching in Uganda and it is home to two fascinating hot springs – the Sempaya Hot Springs.` 
-    // },
-    // {
-    //     name: "Rwenzori Mountains National Park",
-    //     image: "https://www.silverbackgorillatours.com/wp-content/uploads/2019/03/uganda-game-parks.jpg",
-    //     summary:'Climb the Rwenzori mountains',
-    //     description: `Climbing Rwenzori Mountains is the key attraction, the park is also known for the birds, animals and remarkable botany.` 
-    // },
-]
+    ]
 
 
 
 
 const createParkContent = (park)=>{
     return `
-               
-                   <img src="${park.image}" alt="${park.name}">
+               <div class="image">
+               <img src="${park.image}" alt="${park.name}">
+               </div>
+        
+                   
                    <div class="card-content">
 
                        <h3 class="title">${park.name}</h3>
@@ -100,5 +79,6 @@ const moreButton = document.querySelector('.more')
 moreButton.addEventListener('click',()=>{
     
     gameParks.slice(2).forEach(addPark)
+    moreButton.classList.add('no-display')
 })
 
