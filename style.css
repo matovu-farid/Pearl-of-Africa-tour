@@ -14,6 +14,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 a {
   color: inherit;
   font-weight: 700;
@@ -319,19 +323,31 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .past-years, .hero {
     display: flex;
     flex-direction: column;
   }
 
   .hero {
     align-items: center;
+  }
+
+  .past-years {
+    justify-content: center;
   }
 
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .hero .text {
+    width: 60%;
+  }
+
+  .hero footer {
+    margin: 2vh 0;
   }
 
   .more-categories {
@@ -351,10 +367,12 @@ p {
     text-align: center;
     flex-direction: row;
     justify-content: center;
+    width: 80%;
   }
   .categories ul li {
     margin: 0 1px;
     flex-direction: column;
+    flex: 1;
   }
   .categories ul li div {
     flex-direction: column;
@@ -400,6 +418,31 @@ p {
   .parks ul {
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  .about .text {
+    background-color: #fff;
+  }
+  .about .about-description {
+    background-color: #fff;
+  }
+
+  .past-years {
+    width: 100%;
+    align-items: center;
+  }
+
+  .past-years ul {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .past-years ul li {
+    flex: 1;
+    margin: 30px;
+  }
+  .past-years ul .overlay {
+    margin: 0;
   }
 }
 
