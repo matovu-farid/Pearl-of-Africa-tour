@@ -87,7 +87,7 @@ p {
 
 .hero header {
   color: #ec5242;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 30px 0;
   font-weight: 900;
 }
@@ -143,12 +143,12 @@ p {
 
 .categories header {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0 5px;
 }
 
 .categories .button {
   width: 70%;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .categories li {
@@ -185,6 +185,10 @@ p {
   align-self: center;
 }
 
+.categories .underline {
+  margin-bottom: 20px;
+}
+
 .parks {
   display: flex;
   flex-direction: column;
@@ -205,7 +209,6 @@ p {
 .parks li {
   display: flex;
   margin: 20px 0;
-  height: 15vh;
   width: 350px;
 }
 
@@ -264,12 +267,20 @@ p {
 }
 
 .about main,
-.about footer,
-.copyright {
+.about footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  padding-bottom: 40px;
 }
 
 .about .menu-button {
@@ -348,17 +359,19 @@ p {
 }
 
 .patners {
-  background-color: #272a31;
+  background-color: #414146;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-top: 10vh;
+  color: #b0b0b2;
 }
 
-.patners header {
-  color: white;
+.patners h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .patners img {
@@ -371,7 +384,6 @@ p {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #525252;
 }
 
 .patners ul li {
@@ -384,6 +396,10 @@ p {
 
 .only-desktop {
   display: none;
+}
+
+.small-weight {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
