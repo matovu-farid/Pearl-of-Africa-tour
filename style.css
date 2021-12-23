@@ -2,6 +2,7 @@
   font-family: cocco;
   src: url(./assets/fonts/cocoregular.ttf);
 }
+
 * {
   box-sizing: content-box;
   margin: 0;
@@ -42,14 +43,15 @@ section {
 
 h1 {
   padding: 10px 0;
-  font-family: "cocco";
+  font-family: "cocco", sans-serif;
 }
 
 h2 {
   padding: 5px 0;
 }
 
-h3, h4 {
+h3,
+h4 {
   padding: 3px 0;
 }
 
@@ -64,10 +66,12 @@ p {
   padding: 20px;
   background-size: cover;
 }
+
 .hero .text {
   padding: 15px;
   border: solid #fff;
 }
+
 .hero .background-images {
   flex: 1;
   position: absolute;
@@ -79,21 +83,25 @@ p {
   background-size: 100px 100px;
   filter: grayscale(100%) opacity(15%);
 }
+
 .hero header {
   color: #ec5242;
   font-size: 3rem;
   padding: 30px 0;
   font-weight: 900;
 }
+
 .hero header span {
   font-size: 2.2rem;
 }
+
 .hero footer {
   padding: 20px 0;
 }
+
 .hero footer .date {
   font-size: 2.2rem;
-  font-family: cocco;
+  font-family: cocco, sans-serif;
   font-weight: 900;
 }
 
@@ -101,6 +109,24 @@ p {
 .fas,
 .fab {
   font-size: 2.2rem;
+}
+
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-logo p {
+  padding: 10px 0;
+}
+
+.button {
+  color: #fff;
+  background-color: #ec5242;
+  padding: 20px 30px;
 }
 
 .categories {
@@ -113,14 +139,17 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
 .categories header {
   text-align: center;
   padding: 20px;
 }
+
 .categories .button {
   width: 70%;
   margin-bottom: 20px;
 }
+
 .categories li {
   display: flex;
   justify-content: space-around;
@@ -129,31 +158,21 @@ p {
   background: rgba(255, 255, 255, 0.15);
   margin: 4px 0;
 }
+
 .categories li div {
   flex: 1;
   display: flex;
   padding: 5px;
 }
+
 .categories li div h3 {
   padding-left: 10px;
-}
-.categories li div h3 {
   color: #ec5242;
   margin: 0 0 0 5px;
 }
+
 .categories li p {
   flex: 2;
-}
-
-.about-logo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  width: 50%;
-}
-.about-logo p {
-  padding: 10px 0;
 }
 
 .underline {
@@ -171,38 +190,46 @@ p {
   align-items: center;
   padding: 30px 0;
 }
+
 .parks header {
   padding: 10px;
 }
+
 .parks img {
   width: 80px;
   height: 80px;
   margin: 10px;
 }
+
 .parks li {
   display: flex;
   margin: 20px 0;
   height: 15vh;
   width: 350px;
 }
+
 .parks li hr {
   background-color: #d3d3d3;
   margin: 5px 0;
   width: 10%;
 }
+
 .parks li .image {
   background: url("./assets/backgrounds/black_checked.jpeg") no-repeat;
   background-size: 50px 50px;
   background-position: 0% 0%;
 }
+
 .parks li .title {
   padding: 3px;
 }
+
 .parks li .subtitle {
   padding: 2px;
   color: #ec5242;
   font-style: italic;
 }
+
 .parks li .descripton {
   padding: 1px;
 }
@@ -216,18 +243,14 @@ p {
   width: 90%;
   border: solid #d3d3d3 2px;
 }
+
 .more .button-text {
   padding: 10px;
 }
+
 .more .fa {
   color: #ec5242;
   align-self: center;
-}
-
-.button {
-  color: #fff;
-  background-color: #ec5242;
-  padding: 20px 30px;
 }
 
 .logo {
@@ -239,7 +262,9 @@ p {
   height: 5vh;
 }
 
-.about main, .about footer, .copyright {
+.about main,
+.about footer,
+.copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,16 +283,19 @@ p {
 .past-years {
   width: 90%;
 }
+
 .past-years .first {
   height: 20vh;
   background: url("./assets/images/elephant_tour.jpeg") no-repeat;
   background-size: cover;
 }
+
 .past-years .last {
   height: 20vh;
   background: url("./assets/images/lions.jpeg") no-repeat;
   background-size: cover;
 }
+
 .past-years .overlay {
   background-color: rgba(255, 0, 0, 0.4);
   height: 100%;
@@ -277,35 +305,9 @@ p {
   justify-content: center;
   margin: 40px 0;
 }
+
 .past-years .overlay h3 {
   font-size: 2.2rem;
-}
-
-.patners {
-  background-color: #272a31;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10vh;
-}
-.patners header {
-  color: white;
-}
-.patners img {
-  width: 50px;
-}
-.patners ul {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: #525252;
-}
-.patners ul li {
-  padding: 10px;
 }
 
 .menu {
@@ -319,26 +321,60 @@ p {
   flex-direction: column;
   padding-top: 0;
 }
+
 .menu ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu li {
+
+.menu .list-item {
   padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  margin: 3px 0;
+  margin: 1px 0;
 }
+
 .menu a {
   text-decoration: none;
-  padding: auto;
   width: 100%;
 }
+
 .menu .fa {
   align-self: flex-end;
   margin: 20px;
+}
+
+.patners {
+  background-color: #272a31;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.patners header {
+  color: white;
+}
+
+.patners img {
+  width: 50px;
+}
+
+.patners ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #525252;
+}
+
+.patners ul li {
+  padding: 10px;
 }
 
 .no-display {
@@ -350,17 +386,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .past-years, .hero {
+  .past-years,
+  .hero {
     display: flex;
     flex-direction: column;
-  }
-
-  .hero {
-    align-items: center;
-  }
-
-  .past-years {
-    justify-content: center;
   }
 
   body {
@@ -385,6 +414,33 @@ p {
     display: none;
   }
 
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav li {
+    padding: 10px 30px;
+  }
+
+  .nav a {
+    text-decoration: none;
+  }
+
+  .nav div {
+    display: flex;
+    justify-content: center;
+    flex: 4;
+  }
+
+  .nav ul {
+    flex: 6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
   .categories ul {
     display: flex;
     text-align: center;
@@ -392,17 +448,30 @@ p {
     justify-content: center;
     width: 80%;
   }
+
   .categories ul li {
     margin: 0 1px;
     flex-direction: column;
     flex: 1;
   }
+
   .categories ul li div {
     flex-direction: column;
   }
 
-  .categories li:hover {
-    border: solid 3px white;
+  .past-years ul {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .past-years ul li {
+    flex: 1;
+    margin: 30px;
+  }
+
+  .past-years ul .overlay {
+    margin: 0;
   }
 
   .menu-button {
@@ -412,6 +481,7 @@ p {
   .welcome {
     font-size: 4.8rem;
   }
+
   .welcome span {
     font-size: 3rem;
   }
@@ -422,17 +492,21 @@ p {
     align-items: center;
     width: 100%;
   }
+
   .hero header {
     font-size: 4.5rem;
     justify-content: flex-start;
     text-align: start;
   }
+
   .hero header h1 {
     font-size: 7rem;
   }
+
   .hero .text {
     width: 80%;
   }
+
   .hero .background-images {
     background: url("./assets/backgrounds/lion_a-removebg-preview.png") no-repeat 15% 15%, url("./assets/backgrounds/elephant-removebg-preview.png") no-repeat 90% 40%, url("./assets/backgrounds/mask.png") no-repeat 5% 80%;
     background-size: 200px, 150px, 100px;
@@ -442,35 +516,11 @@ p {
     width: 70%;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav li {
-    padding: 10px 30px;
-  }
-  .nav a {
-    text-decoration: none;
-  }
-  .nav div {
-    display: flex;
-    justify-content: center;
-    flex: 4;
-  }
-  .nav ul {
-    flex: 6;
-  }
-  .nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-
   .parks ul {
     display: grid;
     grid-template-columns: auto auto;
   }
+
   .parks li .image {
     background: url("./assets/backgrounds/grey_checked.jpeg") no-repeat;
     background-size: 50px 50px;
@@ -480,27 +530,36 @@ p {
   .about .text {
     background-color: #fff;
   }
+
   .about .about-description {
     background-color: #fff;
   }
 
   .past-years {
+    justify-content: center;
     width: 100%;
     align-items: center;
   }
 
-  .past-years ul {
+  .top-bar {
+    background-color: #272a31;
+    color: #fff;
     display: flex;
-    width: 80%;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-top: 0;
   }
-  .past-years ul li {
-    flex: 1;
-    margin: 30px;
+
+  .top-bar ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
   }
-  .past-years ul .overlay {
-    margin: 0;
+
+  .top-bar ul li {
+    padding: 5px;
+  }
+
+  .categories li:hover {
+    border: solid 3px white;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
