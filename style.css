@@ -529,9 +529,10 @@ p {
 
   .about .text {
     background-color: #fff;
+    max-width: 600px;
   }
 
-  .about .about-description {
+  .about-description {
     background-color: #fff;
   }
 
@@ -539,6 +540,10 @@ p {
     justify-content: center;
     width: 100%;
     align-items: center;
+  }
+
+  .year {
+    max-width: 400px;
   }
 
   .top-bar {
