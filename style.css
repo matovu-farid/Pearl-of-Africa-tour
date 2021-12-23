@@ -1,6 +1,6 @@
 @font-face {
   font-family: cocco;
-  src: url(./assets/fonts/coco.ttf);
+  src: url(./assets/fonts/cocoregular.ttf);
 }
 * {
   box-sizing: content-box;
@@ -239,7 +239,7 @@ p {
   height: 5vh;
 }
 
-.about main, footer {
+.about main, .about footer, .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,18 +363,14 @@ p {
     justify-content: center;
   }
 
+  body {
+    font-size: 1.2rem;
+  }
+
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero .text {
-    width: 60%;
-  }
-
-  .hero footer {
-    margin: 2vh 0;
   }
 
   .more-categories {
@@ -405,6 +401,10 @@ p {
     flex-direction: column;
   }
 
+  .categories li:hover {
+    border: solid 3px white;
+  }
+
   .menu-button {
     display: none;
   }
@@ -416,13 +416,30 @@ p {
     font-size: 3rem;
   }
 
+  .hero {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero header {
+    font-size: 4.5rem;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .hero header h1 {
+    font-size: 7rem;
+  }
+  .hero .text {
+    width: 80%;
+  }
   .hero .background-images {
-    background: url("./assets/backgrounds/lion_a-removebg-preview.png") no-repeat 5% 5%, url("./assets/backgrounds/elephant-removebg-preview.png") no-repeat 90% 25%, url("./assets/backgrounds/mask.png") no-repeat 5% 35%;
+    background: url("./assets/backgrounds/lion_a-removebg-preview.png") no-repeat 15% 15%, url("./assets/backgrounds/elephant-removebg-preview.png") no-repeat 90% 40%, url("./assets/backgrounds/mask.png") no-repeat 5% 80%;
     background-size: 200px, 150px, 100px;
   }
 
   .hero > * {
-    width: 80%;
+    width: 70%;
   }
 
   .nav {
