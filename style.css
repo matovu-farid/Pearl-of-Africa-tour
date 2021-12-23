@@ -75,7 +75,8 @@ p {
 .hero .background-images {
   flex: 1;
   position: absolute;
-  width: 100vw;
+  left: 0;
+  right: 0;
   height: 100vh;
   z-index: 0;
   pointer-events: none;
