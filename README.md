@@ -3,6 +3,7 @@
 
 # Capstone
 
+## Description
 The project is a website for the Pearl of Africa tour which is organised annually and brings together tourists from all over the world.
 
 ![screenshot](./assets/screenshot.png)
@@ -29,8 +30,6 @@ To get the content of this project locally you need to run this command in your 
 
 - git clone your https://github.com/matovu-farid/Capstone.git
 - cd project Capstone
-
-
 
 ## Authors
 
