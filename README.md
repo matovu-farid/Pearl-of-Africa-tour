@@ -1,12 +1,11 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone
+# Pearl-of-Africa-tour
 My capstone project for HTML and CSS module
 
 ## Description
-For my capstone project, I chose to use an imaginary fictitious event held in Uganda called the Pearl of Africa tour. The project proposes that The Pearl of Africa tour is held annually and it would bring together tourists from all over the world to Uganda. It would feature tours to the best game parks in Uganda at no cost.
-The website is responsive and looks good on all types of screens. It is built with HTML and CSS.
+The website is for The Pearl of Africa tour. The Pearl of Africa tour is held annually and it would bring together tourists from all over the world to Uganda. It features tours to the best game parks in Uganda at no cost. The website is responsive and looks good on all types of screens. It is built with HTML and CSS.
 
 ![screenshot](./assets/screenshot.png)
 
