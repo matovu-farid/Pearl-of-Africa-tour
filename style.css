@@ -1,0 +1,587 @@
+@font-face {
+  font-family: cocco;
+  src: url(./assets/fonts/cocoregular.ttf);
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  color: #525252;
+}
+
+body {
+  font-size: 1.2rem;
+  margin: auto 0;
+  font-family: "Lato", sans-serif;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+section {
+  padding-top: 40px;
+}
+
+h1 {
+  padding: 10px 0;
+  font-family: "cocco", sans-serif;
+}
+
+h2 {
+  padding: 5px 0;
+}
+
+h3,
+h4 {
+  padding: 3px 0;
+}
+
+p {
+  padding: 2px 0;
+}
+
+.hero {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-size: cover;
+}
+
+.hero .text {
+  padding: 15px;
+  border: solid #fff;
+}
+
+.hero .background-images {
+  flex: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: url("./assets/backgrounds/african_woman.png") no-repeat 15% 15%, url("./assets/backgrounds/african_pattern.png") no-repeat 75% 35%, url("./assets/backgrounds/mask.png") no-repeat 5% 45%;
+  background-size: 100px 100px;
+  filter: grayscale(100%) opacity(15%);
+}
+
+.hero header {
+  color: #ec5242;
+  font-size: 2.5rem;
+  padding: 30px 0;
+  font-weight: 900;
+}
+
+.hero header span {
+  font-size: 2.2rem;
+}
+
+.hero footer {
+  padding: 20px 0;
+}
+
+.hero footer .date {
+  font-size: 2.2rem;
+  font-family: cocco, sans-serif;
+  font-weight: 900;
+}
+
+.fa,
+.fas,
+.fab {
+  font-size: 2.2rem;
+}
+
+.about-logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-logo p {
+  padding: 10px 0;
+}
+
+.button {
+  color: #fff;
+  background-color: #ec5242;
+  padding: 20px 30px;
+}
+
+.categories {
+  background: #272a31;
+  width: 100%;
+  color: #fff;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories header {
+  text-align: center;
+  padding: 20px 0 5px;
+}
+
+.categories .button {
+  width: 70%;
+  margin: 20px;
+}
+
+.categories li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 4px 0;
+}
+
+.categories li div {
+  flex: 1;
+  display: flex;
+  padding: 5px;
+}
+
+.categories li div h3 {
+  padding-left: 10px;
+  color: #ec5242;
+  margin: 0 0 0 5px;
+}
+
+.categories li p {
+  flex: 2;
+}
+
+.underline {
+  width: 10%;
+  height: 2px;
+  background-color: #ec5242;
+  border: 0;
+  border-radius: 1px;
+  align-self: center;
+}
+
+.categories .underline {
+  margin-bottom: 20px;
+}
+
+.parks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.parks header {
+  padding: 10px;
+}
+
+.parks img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.parks li {
+  display: flex;
+  margin: 20px 0;
+  width: 350px;
+}
+
+.parks li hr {
+  background-color: #d3d3d3;
+  margin: 5px 0;
+  width: 10%;
+}
+
+.parks li .image {
+  background: url("./assets/backgrounds/black_checked.jpeg") no-repeat;
+  background-size: 50px 50px;
+  background-position: 0% 0%;
+}
+
+.parks li .title {
+  padding: 3px;
+}
+
+.parks li .subtitle {
+  padding: 2px;
+  color: #ec5242;
+  font-style: italic;
+}
+
+.parks li .descripton {
+  padding: 1px;
+}
+
+.more {
+  background-color: transparent;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: solid #d3d3d3 2px;
+}
+
+.more .button-text {
+  padding: 10px;
+}
+
+.more .fa {
+  color: #ec5242;
+  align-self: center;
+}
+
+.logo {
+  height: 15vh;
+  border: #d3d3d3 solid;
+}
+
+.header-logo {
+  height: 5vh;
+}
+
+.about main,
+.about footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  padding-bottom: 40px;
+}
+
+.about .menu-button {
+  text-align: start;
+}
+
+.about-description {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.past-years {
+  width: 90%;
+}
+
+.past-years .first {
+  height: 20vh;
+  background: url("./assets/images/elephant_tour.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.past-years .last {
+  height: 20vh;
+  background: url("./assets/images/lions.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.past-years .overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.past-years .overlay h3 {
+  font-size: 2.2rem;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background-color: #272a31;
+  width: 100%;
+  color: #fff;
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu .list-item {
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  text-align: center;
+  margin: 1px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu .fa {
+  align-self: flex-end;
+  margin: 20px;
+}
+
+.patners {
+  background-color: #414146;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10vh;
+  color: #b0b0b2;
+}
+
+.patners h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.patners img {
+  width: 50px;
+}
+
+.patners ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.patners ul li {
+  padding: 10px;
+}
+
+.no-display {
+  display: none;
+}
+
+.only-desktop {
+  display: none;
+}
+
+.small-weight {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .past-years,
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more-categories {
+    padding: 20px;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav li {
+    padding: 10px 30px;
+  }
+
+  .nav a {
+    text-decoration: none;
+  }
+
+  .nav div {
+    display: flex;
+    justify-content: center;
+    flex: 4;
+  }
+
+  .nav ul {
+    flex: 6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .categories ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .categories ul li {
+    margin: 0 1px;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .categories ul li div {
+    flex-direction: column;
+  }
+
+  .past-years ul {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .past-years ul li {
+    flex: 1;
+    margin: 30px;
+  }
+
+  .past-years ul .overlay {
+    margin: 0;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .welcome {
+    font-size: 4.8rem;
+  }
+
+  .welcome span {
+    font-size: 3rem;
+  }
+
+  .hero {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero header {
+    font-size: 4.5rem;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .hero header h1 {
+    font-size: 7rem;
+  }
+
+  .hero .text {
+    width: 80%;
+  }
+
+  .hero .background-images {
+    background: url("./assets/backgrounds/lion_a-removebg-preview.png") no-repeat 15% 15%, url("./assets/backgrounds/elephant-removebg-preview.png") no-repeat 90% 40%, url("./assets/backgrounds/mask.png") no-repeat 5% 80%;
+    background-size: 200px, 150px, 100px;
+  }
+
+  .hero > * {
+    width: 70%;
+  }
+
+  .parks ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .parks li .image {
+    background: url("./assets/backgrounds/grey_checked.jpeg") no-repeat;
+    background-size: 50px 50px;
+    background-position: 0% 0%;
+  }
+
+  .about .text {
+    background-color: #fff;
+    max-width: 600px;
+  }
+
+  .about-description {
+    background-color: #fff;
+  }
+
+  .past-years {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .year {
+    max-width: 400px;
+  }
+
+  .top-bar {
+    background-color: #272a31;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+
+  .top-bar ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+
+  .top-bar ul li {
+    padding: 5px;
+  }
+
+  .categories li:hover {
+    border: solid 3px white;
+  }
+}
