@@ -19,7 +19,7 @@ The website provides more information about the tour as well as view the differe
 
 ## Live Demo
 
-[Live Demo Link](https://matovu-farid.github.io/Capstone/)
+[Live Demo Link]( https://matovu-farid.github.io/Pearl-of-Africa-tour/)
 
 ## Video Descrption
 [go to video](https://www.loom.com/share/5ff3c68ab0a24068a83ed614d1ead71d)
